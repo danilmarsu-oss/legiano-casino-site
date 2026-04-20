@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="nb-NO">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Personvernpolicy – Legiano Casino Norge</title>
+  <meta name="description" content="Les vår offisielle personvernpolicy for Legiano Casino i Norge. Vi forklarer hvordan vi samler inn, bruker og beskytter dine personopplysninger på vår offisielle nettside." />
+  <link rel="canonical" href="/privacy-policy/" />
+  <link rel="icon" type="image/x-icon" href="../legiano%20images/favicon%20(5).ico" />
+  <style>
+:root {
+  --header-footer-bg: #0d0000;
+  --button-green: #058805;
+  --cta-green: #058805;
+  --main-bg: #0c0c0c;
+  --card-bg: #161616;
+  --soft-border: #2f2f2f;
+  --text-main: #f4f4f4;
+  --text-muted: #bebebe;
+  --highlight: #f6cb51;
+  --radius: 14px;
+  --max-width: 1200px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  color: var(--text-main);
+  background:
+    radial-gradient(circle at 12% 10%, #1f1f1f 0%, rgba(31, 31, 31, 0) 32%),
+    radial-gradient(circle at 88% 30%, #190909 0%, rgba(25, 9, 9, 0) 30%),
+    linear-gradient(180deg, #151515 0%, var(--main-bg) 45%, #111111 100%);
+  min-height: 100vh;
+  line-height: 1.55;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.container {
+  width: min(var(--max-width), 92vw);
+  margin-inline: auto;
+}
+
+.site-header,
+.site-footer {
+  background: var(--header-footer-bg);
+}
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  border-bottom: 1px solid #2a1616;
+}
+
+.header-inner {
+  min-height: 84px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  padding: 12px 0;
+}
+
+.logo-link {
+  display: inline-flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.logo {
+  width: 170px;
+  height: auto;
+  object-fit: contain;
+}
+
+.main-nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.main-nav a {
+  color: var(--text-main);
+  text-decoration: none;
+  font-weight: 700;
+  letter-spacing: 0.2px;
+}
+
+.main-nav a:hover {
+  color: var(--highlight);
+}
+
+.auth-buttons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.btn {
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid transparent;
+  border-radius: 999px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 0.2s ease, background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.btn:focus-visible {
+  outline: 3px solid #ffffff;
+  outline-offset: 2px;
+}
+
+.btn-header {
+  padding: 10px 16px;
+  font-size: 0.93rem;
+  color: #ffffff;
+  background-color: var(--button-green);
+  border-color: #19b519;
+}
+
+.btn-header:hover {
+  transform: translateY(-1px);
+  background-color: #047304;
+}
+
+main {
+  padding-block: 28px 46px;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Bebas Neue", "Franklin Gothic Medium", "Arial Narrow", sans-serif;
+  letter-spacing: 0.4px;
+  line-height: 1.12;
+}
+
+section {
+  margin-top: 34px;
+  animation: fadeUp 0.75s ease both;
+}
+
+section h2 {
+  font-size: clamp(1.55rem, 3vw, 2.25rem);
+  margin-bottom: 14px;
+}
+
+.hero {
+  margin-top: 0;
+}
+
+.hero h1 {
+  font-size: clamp(2rem, 5.2vw, 3.6rem);
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.hero-banner {
+  border-radius: var(--radius);
+  overflow: hidden;
+  border: 1px solid #312020;
+  box-shadow: 0 12px 38px rgba(0, 0, 0, 0.45);
+}
+
+.cta-wrap {
+  display: flex;
+  justify-content: center;
+  margin-top: 22px;
+}
+
+.btn-cta {
+  min-width: 210px;
+  font-size: 1.08rem;
+  padding: 14px 28px;
+  color: #fff;
+  background: var(--cta-green);
+  border-color: #31c531;
+  animation: pulse 1.8s infinite;
+  box-shadow: 0 0 0 rgba(5, 136, 5, 0.55);
+}
+
+.btn-cta:hover {
+  animation-play-state: paused;
+  background: #046f04;
+  transform: translateY(-1px);
+}
+
+.seo-block {
+  background: var(--card-bg);
+  border: 1px solid var(--soft-border);
+  border-radius: var(--radius);
+  padding: 18px;
+}
+
+.page-content {
+  background: var(--card-bg);
+  border: 1px solid var(--soft-border);
+  border-radius: var(--radius);
+  padding: clamp(16px, 2vw, 26px);
+}
+
+.page-content h1 {
+  font-size: clamp(1.9rem, 4vw, 3rem);
+  margin-bottom: 16px;
+}
+
+.page-content h2 {
+  font-size: clamp(1.45rem, 2.5vw, 2rem);
+  margin-top: 22px;
+  margin-bottom: 10px;
+}
+
+.page-content h3 {
+  font-size: clamp(1.2rem, 2.2vw, 1.55rem);
+  margin-top: 20px;
+  margin-bottom: 9px;
+}
+
+.page-content p,
+.page-content li,
+.page-content td,
+.page-content th,
+.page-content em,
+.page-content strong {
+  color: var(--text-muted);
+}
+
+.page-content ul,
+.page-content ol {
+  margin: 8px 0 0 22px;
+}
+
+.page-content p + p,
+.page-content ul + p,
+.page-content ol + p,
+.page-content p + ul,
+.page-content p + ol {
+  margin-top: 12px;
+}
+
+.page-content table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 14px;
+  min-width: 560px;
+}
+
+.page-content table th,
+.page-content table td {
+  border: 1px solid #3a3a3a;
+  padding: 10px 12px;
+  text-align: left;
+}
+
+.page-content table th {
+  background: #252525;
+  color: #fff;
+}
+
+.page-content .table-wrap {
+  overflow-x: auto;
+}
+
+.page-content a {
+  color: #f2d572;
+}
+
+.updated-box {
+  margin-top: 28px;
+  border-top: 1px solid #2b2b2b;
+  padding-top: 16px;
+  text-align: center;
+  color: #d0d0d0;
+}
+
+.updated-box strong {
+  color: #fff;
+}
+
+.site-footer {
+  border-top: 1px solid #2a1616;
+  padding-block: 28px 18px;
+  margin-top: 12px;
+}
+
+.footer-section {
+  margin-bottom: 20px;
+}
+
+.footer-title {
+  font-size: 1.25rem;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.trust-grid {
+  display: grid;
+  gap: 12px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.trust-item {
+  border: 1px solid #2a2a2a;
+  border-radius: 12px;
+  background: #151515;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 90px;
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.trust-item img {
+  max-height: 52px;
+  width: auto;
+  object-fit: contain;
+}
+
+.trust-item:hover {
+  transform: translateY(-2px);
+  border-color: #585858;
+}
+
+.policy-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  list-style: none;
+}
+
+.policy-links a {
+  color: #dddddd;
+  text-decoration: none;
+}
+
+.policy-links a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.providers-grid {
+  display: grid;
+  gap: 12px;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
+
+.provider-item {
+  border: 1px solid #2a2a2a;
+  border-radius: 12px;
+  background: #151515;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 90px;
+}
+
+.provider-item img {
+  max-height: 52px;
+  width: auto;
+  object-fit: contain;
+}
+
+.copyright {
+  text-align: center;
+  color: #a9a9a9;
+  border-top: 1px solid #271414;
+  padding-top: 14px;
+  font-size: 0.95rem;
+}
+
+@keyframes pulse {
+  0% { box-shadow: 0 0 0 0 rgba(5, 136, 5, 0.55); }
+  70% { box-shadow: 0 0 0 18px rgba(5, 136, 5, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(5, 136, 5, 0); }
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(14px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 700px) {
+  .header-inner {
+    min-height: 58px;
+    padding: 8px 0;
+    gap: 8px;
+  }
+
+  .logo {
+    width: 102px;
+  }
+
+  .main-nav {
+    display: none;
+  }
+
+  .auth-buttons {
+    gap: 6px;
+  }
+
+  .btn-header {
+    padding: 7px 10px;
+    font-size: 0.8rem;
+  }
+
+  main {
+    padding-block: 18px 30px;
+  }
+
+  .trust-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .btn-cta {
+    min-width: 180px;
+    font-size: 1rem;
+  }
+}
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo-link" href="../" aria-label="Legiano Casino hjem">
+        <img class="logo" src="../legiano images/legiano logo.webp" alt="Legiano Casino logo" />
+      </a>
+
+      <nav class="main-nav" aria-label="Hovednavigasjon">
+        <ul>
+          <li><a href="../bonus/">Bonus</a></li>
+        </ul>
+      </nav>
+
+      <div class="auth-buttons">
+        <a class="btn btn-header" href="../login/">Logg inn</a>
+        <a class="btn btn-header" href="/go/">Registrer deg</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <section class="hero" aria-labelledby="main-title">
+        <h1 id="main-title">Legiano Casino</h1>
+        <div class="hero-banner">
+          <img src="../legiano images/legiano.webp" alt="Legiano Casino kampanjebanner" />
+        </div>
+        <div class="cta-wrap">
+          <a class="btn btn-cta" href="/go/">Bli Med Nå!</a>
+        </div>
+      </section>
+
+      <section aria-label="Sideinnhold">
+        <article class="page-content">
+          <h1>Personvernpolicy – Legiano Casino</h1>
+
+          <p>Velkommen til Legiano Casinos offisielle nettside for Norge. Vi i Legiano Casino tar personvernet ditt på høyeste alvor. Denne personvernpolicyen beskriver hvordan vi samler inn, bruker, lagrer og beskytter dine personopplysninger når du besøker og bruker vår plattform. Ved å registrere deg og bruke våre tjenester, samtykker du til vilkårene som er beskrevet i denne policyen. Vi oppfordrer deg til å lese dette dokumentet nøye.</p>
+
+          <h2>1. Hvem vi er</h2>
+
+          <p>Legiano Casino er et nettbasert casino som tilbyr et bredt utvalg av spillopplevelser til spillere i Norge. Dette er den offisielle nettsiden til Legiano Casino i Norge, og vi er ansvarlige for behandlingen av dine personopplysninger i henhold til gjeldende personvernlovgivning, inkludert EUs personvernforordning (GDPR) og norsk personopplysningslov. Vi er forpliktet til å behandle dine data på en lovlig, rettferdig og transparent måte.</p>
+
+          <h2>2. Hvilke personopplysninger vi samler inn</h2>
+
+          <p>Når du oppretter en konto hos oss eller bruker våre tjenester, kan vi samle inn følgende typer personopplysninger:</p>
+
+          <ul>
+            <li><strong>Identifikasjonsopplysninger:</strong> Fullt navn, fødselsdato, nasjonalitet og kjønn.</li>
+            <li><strong>Kontaktopplysninger:</strong> E-postadresse, telefonnummer og postadresse.</li>
+            <li><strong>Finansielle opplysninger:</strong> Betalingsmetoder, transaksjonshistorikk og bankopplysninger som er nødvendige for inn- og utbetalinger.</li>
+            <li><strong>Identifikasjonsdokumenter:</strong> Kopi av pass, førerkort eller andre offisielle dokumenter som kreves for å verifisere identiteten din i henhold til hvitvaskingsregelverket.</li>
+            <li><strong>Tekniske opplysninger:</strong> IP-adresse, enhetstype, nettlesertype, operativsystem og informasjonskapsler (cookies).</li>
+            <li><strong>Spillaktivitet:</strong> Innsatshistorikk, spillpreferanser og aktivitetslogger på plattformen.</li>
+          </ul>
+
+          <h2>3. Hvordan vi samler inn opplysninger</h2>
+
+          <p>Vi samler inn personopplysninger på følgende måter:</p>
+
+          <ul>
+            <li>Direkte fra deg når du registrerer deg, fyller ut skjemaer eller kontakter vår kundeservice.</li>
+            <li>Automatisk gjennom bruk av informasjonskapsler og sporingsteknologier når du navigerer på vår nettside.</li>
+            <li>Fra tredjeparter, som betalingsleverandører og identifikasjonstjenester, for å verifisere din identitet og fullføre transaksjoner.</li>
+          </ul>
+
+          <h2>4. Formålet med behandlingen av personopplysninger</h2>
+
+          <p>Vi bruker dine personopplysninger til følgende formål:</p>
+
+          <ul>
+            <li><strong>Kontoregistrering og administrasjon:</strong> For å opprette og administrere din spillerkonto hos Legiano Casino.</li>
+            <li><strong>Levering av tjenester:</strong> For å tilby deg tilgang til våre spill, kampanjer og andre tjenester på plattformen.</li>
+            <li><strong>Betalingsbehandling:</strong> For å behandle inn- og utbetalinger på en sikker og effektiv måte.</li>
+            <li><strong>Identitetsverifisering:</strong> For å overholde kravene til kjenn-din-kunde (KYC) og bekjempe hvitvasking av penger.</li>
+            <li><strong>Ansvarlig spilling:</strong> For å overvåke spillaktivitet og tilby verktøy for ansvarlig spilling, inkludert selvekskludering og innskuddsgrenser.</li>
+            <li><strong>Kundeservice:</strong> For å besvare dine henvendelser og gi deg nødvendig støtte.</li>
+            <li><strong>Markedsføring:</strong> For å sende deg relevante tilbud, kampanjer og nyhetsbrev, forutsatt at du har gitt ditt samtykke til dette.</li>
+            <li><strong>Sikkerhets- og svindelforebygging:</strong> For å beskytte plattformen vår og brukerne mot svindel og uautorisert tilgang.</li>
+            <li><strong>Lovpålagte forpliktelser:</strong> For å overholde gjeldende lover og forskrifter i Norge og internasjonalt.</li>
+          </ul>
+
+          <h2>5. Deling av personopplysninger</h2>
+
+          <p>Vi i Legiano Casino selger aldri dine personopplysninger til tredjeparter. Vi kan imidlertid dele opplysninger med følgende parter i nødvendige tilfeller:</p>
+
+          <ul>
+            <li><strong>Tjenesteleverandører:</strong> Betalingsleverandører, IT-leverandører og andre samarbeidspartnere som hjelper oss med å levere tjenestene våre.</li>
+            <li><strong>Regulatoriske myndigheter:</strong> Tilsynsmyndigheter og offentlige etater når vi er pålagt dette ved lov.</li>
+            <li><strong>Revisorer og juridiske rådgivere:</strong> For å overholde våre juridiske og finansielle forpliktelser.</li>
+          </ul>
+
+          <p>Alle tredjeparter vi samarbeider med, er forpliktet til å behandle dine opplysninger i samsvar med gjeldende personvernlovgivning og våre strenge retningslinjer for datasikkerhet.</p>
+
+          <h2>6. Informasjonskapsler (Cookies)</h2>
+
+          <p>Vår nettside bruker informasjonskapsler for å forbedre brukeropplevelsen din og analysere trafikk på plattformen. Informasjonskapsler er små datafiler som lagres på enheten din. Vi bruker både nødvendige informasjonskapsler for at nettsiden skal fungere, og analytiske informasjonskapsler for å forstå hvordan brukere interagerer med plattformen vår. Du kan administrere innstillingene for informasjonskapsler i nettleseren din, men vær oppmerksom på at deaktivering av visse informasjonskapsler kan påvirke funksjonaliteten til nettsiden.</p>
+
+          <h2>7. Dine rettigheter</h2>
+
+          <p>Som bruker av Legiano Casino i Norge har du følgende rettigheter i henhold til GDPR og norsk personvernlovgivning:</p>
+
+          <ul>
+            <li><strong>Rett til innsyn:</strong> Du kan be om en kopi av personopplysningene vi har lagret om deg.</li>
+            <li><strong>Rett til retting:</strong> Du kan be oss om å rette unøyaktige eller ufullstendige opplysninger.</li>
+            <li><strong>Rett til sletting:</strong> Du kan be om at vi sletter dine personopplysninger, med forbehold om lovpålagte lagringsforpliktelser.</li>
+            <li><strong>Rett til begrensning:</strong> Du kan be om at vi begrenser behandlingen av dine opplysninger i visse situasjoner.</li>
+            <li><strong>Rett til dataportabilitet:</strong> Du kan be om å motta dine opplysninger i et strukturert, maskinlesbart format.</li>
+            <li><strong>Rett til å trekke tilbake samtykke:</strong> Dersom behandlingen er basert på samtykke, kan du når som helst trekke dette tilbake.</li>
+          </ul>
+
+          <p>For å utøve dine rettigheter, vennligst kontakt oss via vår offisielle kundeservicekanal. Vi vil besvare din henvendelse innen 30 dager.</p>
+
+          <h2>8. Lagring og sikkerhet</h2>
+
+          <p>Vi lagrer dine personopplysninger så lenge det er nødvendig for å oppfylle formålene beskrevet i denne policyen, eller så lenge det kreves av gjeldende lovgivning. Vi bruker avanserte sikkerhetstiltak, inkludert SSL-kryptering, brannmurer og tilgangskontroll, for å beskytte dine opplysninger mot uautorisert tilgang, tap eller misbruk.</p>
+
+          <h2>9. Endringer i personvernpolicyen</h2>
+
+          <p>Vi forbeholder oss retten til å oppdatere denne personvernpolicyen fra tid til annen for å reflektere endringer i våre tjenester eller gjeldende lovgivning. Vi vil informere deg om vesentlige endringer via e-post eller ved en tydelig melding på vår nettside. Vi anbefaler at du jevnlig gjennomgår denne policyen for å holde deg oppdatert.</p>
+
+          <h2>10. Kontakt oss</h2>
+
+          <p>Dersom du har spørsmål om denne personvernpolicyen eller ønsker å utøve dine rettigheter, er du velkommen til å kontakte oss. Vi i Legiano Casino er alltid tilgjengelige for å hjelpe deg og sikre at dine personopplysninger behandles på en trygg og ansvarlig måte. Ta kontakt med vårt kundeserviceteam via de offisielle kontaktkanalene som er tilgjengelige på vår nettside.</p>
+
+          <p><em>Sist oppdatert: 2024. Denne personvernpolicyen gjelder for Legiano Casinos offisielle nettside i Norge.</em></p>
+        </article>
+      </section>
+
+      <div class="updated-box">
+        <p><strong>Siden oppdatert:</strong> <span id="updated-date">20.04.2026</span></p>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <section class="footer-section" aria-labelledby="trust-title">
+        <h2 class="footer-title" id="trust-title">Trygge spilleorganisasjoner</h2>
+        <div class="trust-grid">
+          <a class="trust-item" href="https://www.gamstop.co.uk/" target="_blank" rel="noopener noreferrer">
+            <img src="../trust badges/gamstop.png" alt="GamStop" />
+          </a>
+          <a class="trust-item" href="https://www.gamcare.org.uk/" target="_blank" rel="noopener noreferrer">
+            <img src="../trust badges/GamCare.png" alt="GamCare" />
+          </a>
+          <a class="trust-item" href="https://www.begambleaware.org/" target="_blank" rel="noopener noreferrer">
+            <img src="../trust badges/gambleaware.png" alt="BeGambleAware" />
+          </a>
+        </div>
+      </section>
+
+      <section class="footer-section" aria-label="Policy lenker">
+        <ul class="policy-links">
+          <li><a href="../about-us/">om oss</a></li>
+          <li><a href="../contact-us/">kontakt oss</a></li>
+          <li><a href="../bonus-policy/">bonuspolicy</a></li>
+          <li><a href="../privacy-policy/">personvernpolicy</a></li>
+          <li><a href="../responsible-gambling/">ansvarlig spilling</a></li>
+        </ul>
+      </section>
+
+      <section class="footer-section" aria-labelledby="providers-title">
+        <h2 class="footer-title" id="providers-title">Spillleverandører</h2>
+        <div class="providers-grid">
+          <div class="provider-item"><img src="../providers/pragmatic-play-logo-png.png" alt="Pragmatic Play" /></div>
+          <div class="provider-item"><img src="../providers/Games-Global.svg" alt="Games Global" /></div>
+          <div class="provider-item"><img src="../providers/playngo.webp" alt="Play'n GO" /></div>
+          <div class="provider-item"><img src="../providers/netentlogo.png" alt="NetEnt" /></div>
+          <div class="provider-item"><img src="../providers/Yggdrasil Gaming_Logo_1.png" alt="Yggdrasil" /></div>
+          <div class="provider-item"><img src="../providers/pragmatic-play.png" alt="Pragmatic" /></div>
+          <div class="provider-item"><img src="../providers/quickspin.png" alt="Quickspin" /></div>
+          <div class="provider-item"><img src="../providers/playn-go-logo.png" alt="Playn GO Logo" /></div>
+          <div class="provider-item"><img src="../providers/microgaming-logo.png" alt="Microgaming" /></div>
+          <div class="provider-item"><img src="../providers/nolimit city.png" alt="Nolimit City" /></div>
+          <div class="provider-item"><img src="../providers/evolution.png" alt="Evolution" /></div>
+        </div>
+      </section>
+
+      <p class="copyright">© 2026 Legiano Casino. Alle rettigheter forbeholdt.</p>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      var dateNode = document.getElementById("updated-date");
+      if (dateNode) {
+        var today = new Date();
+        dateNode.textContent = today.toLocaleDateString("nb-NO", {
+          year: "numeric",
+          month: "2-digit",
+          day: "2-digit"
+        });
+      }
+    })();
+  </script>
+</body>
+</html>
